@@ -53,7 +53,7 @@
   - name: Install Node.js and npm
     apt:
         name:
-          - nodejs
+          - npm
         state: latest
         args: 
           chdir: "{{ dest_path }}"
