@@ -48,10 +48,16 @@
     apt:
         name:
           - nodejs
-          - npm
         state: latest
-    args:
-      chdir: "{{ dest_path }}"
+        
+  - name: Install Node.js and npm
+    apt:
+        name:
+          - nodejs
+        state: latest
+        args: 
+          chdir: "{{ dest_path }}"
+   
 
   - name: Install express JS 
     command: sudo npm install express
