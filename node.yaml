@@ -48,13 +48,10 @@
         state: present
 
   - name: Install Node.js and npm
-    apt:
-        name: npm
-        state: present
-        args: 
-          chdir: "{{ dest_path }}"
-   
-
+    command: npm install
+    args:
+        chdir: "{{ dest_path }}"
+        
   - name: Install express JS 
     command: sudo npm install express
         
