@@ -5,7 +5,7 @@
   vars:
       repo_path: sanjeevkumarsr/node:'${IMAGE_TAG}'
       dest_path: /home/ubuntu/'${IMAGE_TAG}'
-      docker_image: "sanjeevkumarsr/node:{{$IMAGE_TAG}}"
+      docker_image: "sanjeevkumarsr/node:{{IMAGE_TAG}}"
 
 
   tasks:
