@@ -29,11 +29,7 @@
         name: docker-py
         state: present
         
-  - name: Pull Docker image
-    docker_image:
-        name: sanjeevkumarsr/node
-        tag: 29
-        source: pull
+ 
         
   - name: Create a directory if it does not exist
     file:
@@ -54,6 +50,8 @@
           - nodejs
           - npm
         state: latest
+    args:
+      chdir: "{{ dest_path }}"
 
   - name: Install express JS 
     command: sudo npm install express
