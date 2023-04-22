@@ -46,14 +46,12 @@
 
   - name: Install Node.js and npm
     apt:
-        name:
-          - nodejs
+        name: nodejs
         state: latest
-        
+
   - name: Install Node.js and npm
     apt:
-        name:
-          - npm
+        name: npm
         state: latest
         args: 
           chdir: "{{ dest_path }}"
