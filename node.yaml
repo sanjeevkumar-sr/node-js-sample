@@ -29,8 +29,6 @@
         name: docker-py
         state: present
         
- 
-        
   - name: Create a directory if it does not exist
     file:
           dest: "{{ dest_path }}"
@@ -47,12 +45,12 @@
   - name: Install Node.js and npm
     apt:
         name: nodejs
-        state: latest
+        state: present
 
   - name: Install Node.js and npm
     apt:
         name: npm
-        state: latest
+        state: present
         args: 
           chdir: "{{ dest_path }}"
    
