@@ -8,10 +8,10 @@
 
 
   tasks:
-  - name: Install python pip
+  - name: Install Python 3 pip package
     apt:
         name: python3-pip
-        state: present  
+        state: present
   
   - name: Install Docker
     apt:
