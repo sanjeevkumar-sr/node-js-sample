@@ -55,11 +55,6 @@
   - name: Install express JS 
     command: sudo npm install express
         
-  - name: Install Angular
-    npm:
-        name: '@angular/cli'
-        global: yes
-        state: present
         
   - name: Install Process manager tool
     npm:
