@@ -53,7 +53,9 @@
         chdir: "{{ dest_path }}"  
         
   - name: Install express JS 
-    command: sudo npm install express      
+    npm:
+        name: express
+        state: present
 
   - name: Install Process manager tool
     npm:
