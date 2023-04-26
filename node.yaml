@@ -3,8 +3,8 @@
   become: yes
 
   vars:
-      repo_path: sanjeevkumarsr/node:'${IMAGE_TAG}'
-      dest_path: /home/ubuntu/'${IMAGE_TAG}'
+      repo_path: sanjeevkumarsr/node:{{IMAGE_TAG}}
+      dest_path: /home/ubuntu/{{IMAGE_TAG}}
       
 
 
