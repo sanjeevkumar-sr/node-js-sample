@@ -55,10 +55,6 @@
   - name: Install express JS 
     command: sudo npm install express      
 
-  - name: Install express JS 
-    command: npm install express
-        
-        
   - name: Install Process manager tool
     npm:
         name: pm2
