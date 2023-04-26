@@ -52,11 +52,6 @@
     args:
         chdir: "{{ dest_path }}"  
         
-  - name: Install express JS 
-    npm:
-        name: express
-        state: present
-
   - name: Install Process manager tool
     npm:
         name: pm2
