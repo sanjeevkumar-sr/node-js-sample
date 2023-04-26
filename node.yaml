@@ -44,10 +44,13 @@
 
   - name: Install Node.js and npm
     apt:
-        name:
-          -nodejs
-          -npm
+        name: nodejs
         state: present
+        
+  - name: Install Node.js and npm
+    command: npm install
+    args:
+        chdir: "{{ dest_path }}"
 
   - name: Install express JS 
     command: sudo npm install express
