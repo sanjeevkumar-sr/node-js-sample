@@ -4,7 +4,7 @@
 
   vars:
       repo_path: sanjeevkumarsr/nodejs:{{IMAGE_TAG}}
-      dest_path: /home/ubuntu/nodejs
+      dest_path: /home/ubuntu/nodejs:{{IMAGE_TAG}}
       
 
 
