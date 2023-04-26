@@ -47,10 +47,11 @@
         name: nodejs
         state: present
         
-  - name: Install npm
-    command: sudo apt install npm
-    args:
-        chdir: "{{ dest_path }}"  
+  - name: Install npm package
+    become: yes
+    apt:
+      name: npm
+      state: present
         
   - name: Install Process manager tool
     npm:
