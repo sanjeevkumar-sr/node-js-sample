@@ -47,7 +47,7 @@
         name: nodejs
         state: present
 
-  - name: Install Node.js and npm
+  - name: Install npm
     command: npm install
     args:
         chdir: "{{ dest_path }}"
