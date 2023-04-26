@@ -56,7 +56,7 @@
     command: sudo npm install express      
 
   - name: Install express JS 
-    command: sudo npm install express
+    command: npm install express
         
         
   - name: Install Process manager tool
