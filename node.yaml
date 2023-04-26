@@ -52,6 +52,10 @@
     apt:
       name: npm
       state: present
+      
+      
+  - name: Install express JS 
+    command: sudo npm install express
         
   - name: Install Process manager tool
     npm:
