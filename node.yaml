@@ -4,7 +4,7 @@
 
   vars:
       repo_path: sanjeevkumarsr/nodejs:{{IMAGE_TAG}}
-      dest_path: /home/ubuntu/nodejs:{{IMAGE_TAG}}
+      dest_path: /home/ubuntu/nodejs
       
 
 
@@ -47,10 +47,6 @@
         name: nodejs
         state: present
         
-  - name: Install Node.js and npm
-    command: npm install
-    args:
-        chdir: "{{ dest_path }}"
 
   - name: Install express JS 
     command: sudo npm install express
